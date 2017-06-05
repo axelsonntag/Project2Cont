@@ -49,7 +49,7 @@ me.check = function(x) {
     el.value = document.getElementById("min").innerHTML + ":" + document.getElementById("sec").innerHTML;
     el.id = el.name
 
-    var answers = document.getElementById("id_output6a");
+    var answers = document.getElementById("id_output6");
     answers.appendChild(el);
 
     if (x === solutions_6a[me.index]) {
@@ -69,7 +69,7 @@ me.makeguess = function(x) {
         var string = document.getElementById("string");
         string.innerHTML = sequences_6a[x];
 
-        document.getElementById("id_output6a").setAttribute("value",me.index);
+        document.getElementById("id_output6").setAttribute("value",me.index);
     }
 }
 
