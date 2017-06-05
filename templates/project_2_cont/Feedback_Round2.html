@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Feedback Part 1 continued
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        In this period you solved {{ player.output2 }} strings. Therefore, in this period you earned {{ player.output2|c }} tokens. <br>
+        For the time spent in switch mode in this period you earned:  tokens. <br>
+        <strong>Your total earnings in this period are therefore:  tokens.</strong>
+    </p>
+
+{% next_button %}
+
+{% endblock %}
